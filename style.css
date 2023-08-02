@@ -1,0 +1,276 @@
+body {
+    /* set margin and padding to 0 to fill entire space
+    of page */
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", monospace;
+}
+
+/* NAV BAR */
+
+nav {
+    display: ; /* if I make this display: flex, right-margin: auto; on the logo doesn't work */
+    padding: 20px;
+    background-color: #1F2937;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    list-style-type: none; /* take away bullets */
+    align-items: baseline;
+    padding: 0px;
+    margin: 0;
+    
+}
+
+ul a {
+    text-decoration: none; /* remove underline */
+    color: #e5e7eb; /* this has to go AFTER text-decoration: none; for it to work */
+    font-size: 18px;
+}
+
+li.logo {
+    margin-right: auto; /* push everything but left most logo to very right */
+   /* targeting the "logo" class in the LI elements,
+   to set the rest of the LI elements to the right */
+}
+
+.logo a {
+    /* have to use ".logo a" to target the logo text
+    that is in the a element so it will overwrite the css for the ul a elements */
+    /* this is different than above where I'm targeting a single
+    element in a list, this targets the text in the list item */
+    font-size: 24px;
+    color: #F9FAF8; 
+    font-weight: 700; /* 300 = light, 400 = regular, 
+    700 = bold, 900 = extra bold */
+}
+
+/* HERO BLOCK */
+
+.container-hero {
+    display: flex; 
+    padding: 150px 200px; /* padding top/bottom 150px, left/right 200px */
+    background-color: #1F2937;
+    justify-content: space-between;
+    flex-wrap: ;
+    
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 450px;
+    gap: 15px;
+}
+
+.hero h1 {
+    display: flex;
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero p {
+    display: flex;
+    margin-top: -10px; /* margins weren't even from 
+    gap in .hero, needed to shrink this to even 
+    them out, as well as set margin-bottom: 0px;
+    to keep even between the button */
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 400;   
+    color: #e5e7eb;
+}
+
+.hero button {
+    display: flex;
+    justify-content: center; /* center text */
+    width: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 700;
+    border: none; /* remove the button shadow */
+    
+}
+
+.hero-img {
+    /* comment out for now
+    display: flex;
+    flex-basis: 450px;
+    */
+}
+
+.hero-img p {
+    display: flex;
+    width: 450px;
+    margin: 0;
+    padding: 120px;
+    padding-bottom: ;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+/* RANDOM BLOCK */
+
+.container-random {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0; /* not needed here */
+    padding-bottom: 150px; /* not needed here */
+}
+
+.container-random h2 {
+    display: flex;
+    margin: 0; /* needed */
+    margin-top: 40px;
+    justify-content: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.frames { /* just the group of frames and subtext */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container-image { /* individual frame and text */
+    display: flex;
+    flex-direction: column;
+    margin: ;
+    flex-basis: 175px;
+    gap: 10px;
+ 
+}
+
+.container-image img { /* placeholder frame */
+    display: flex;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    flex-basis: 175px;
+}
+
+.container-image p { /* just the subtext */
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;   
+    color: gray;
+    text-align: center;
+    
+}
+
+/* QUOTE BLOCK */
+
+.container-quote {
+    display: flex;
+    flex-direction: ;
+    flex-wrap: wrap; /* allows us to use the
+    break div to force the name below the quote */
+    background-color: #e5e7eb;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.break { /* this allows us to force the 
+    name below the quote, without having
+    to change the flex direction */
+    /* https://tobiasahlin.com/blog/flexbox-break-to-new-row/ */
+    display: flex;
+    flex-basis: 100%;
+}
+
+.container-quote h2 {
+    display: flex;
+    margin: 0;
+    width: 800px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    
+}
+
+.container-quote h3 {
+    display: flex;
+    margin-top: 0; /* tuck it right under the quote */
+    margin-left: 525px; /* guess to make it align with the quote */
+}
+
+/* CALL TO ACTION BLOCK */
+
+.call {
+    display: flex;
+    margin: 150px 200px;
+    padding: 60px 120px;
+    background-color: #3882F6;
+    border-radius: 15px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.call-text h2 {
+    display: flex;
+    margin: 0;
+    padding: ;
+    font-size: 24px;
+    color: #F9FAF8; 
+    font-weight: 700;
+}
+
+.call-text p {
+    display: flex;
+    margin: 0;
+    padding: ;
+    font-size: 18px;
+    font-weight: 400;   
+    color: #e5e7eb;
+}
+
+.call button {
+    display: flex;
+    justify-content: center; /* center text horizontally */
+    align-items: center; /* center text vertically */
+    flex-basis: 150px;
+    padding: ;
+    border-radius: 15px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #f9faf8;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin: 0; /* fill footer to bottom,
+    there was a white space without margin:0 */
+    background-color: #1F2937;
+    color: #e5e7eb;
+    font-size: 18px;
+}
