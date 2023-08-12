@@ -19,14 +19,6 @@ nav {
     padding-right: 200px;
 }
 
-#nav {
-    background-color: ;
-    overflow: hidden;
-    position: ;
-    top: 0;
-    width:;
-}
-
 ul {
     display: flex;
     gap: 35px;
@@ -296,7 +288,7 @@ li.logo {
 
 .button {
     display: flex;
-    align-items: center;
+    align-items: ;
 }
 
 .call button {
