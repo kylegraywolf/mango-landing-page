@@ -4,103 +4,135 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <title>Mango Crush</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Coiny&family=Hanalei+Fill&family=Modak&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+   
         <ul>
-            <li class="logo"><a href="/">Header Logo</a></li>
-            <li class="header-link"><a href="/">Header Link One</a></li>
-            <li class="header-link"><a href="/">Header Link Two</a></li>
-            <li class="header-link"><a href="/">Header Link Three</a></li>
+            <li class="logo"><a href="/">Mango Crush</a></li>
+            <li class="header-link"><a href="#find-us">Find Us!</a></li>
+            <li class="header-link"><a href="#ingredients">Ingredients</a></li>
+            <li class="header-link"><a href="#adorn">Adorn Yourself</a></li>
         </ul>
     </nav>
 
     <!-- HERO BLOCK -->
     <div class="container-hero">
+        <a name="find-us"></a>
         <div class="hero">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes 
-                here under the main title. It's a smaller 
-                font and the color is lower contrast.
+            <h1>It's hot out. You've been <!-- adventuring and-->slaying giant serpents all day.
+                Your mighty thews <!--ache--><!-- are in need of restoration-->flag.
+                You need <!--refreshment-->restoration. You need Mango Crush!!
+                 </h1>
+            <p><!-- Always know where you can find a Mango Crush to slake your thirst.
+                Sign up to receive our daily location schedule, and raging rewards. -->
+                Always know where you can slake your thirst with our daily location schedule, 
+                and episodic RAGING REWARDS.
             </p>
-            <button>Sign Up</button>
+            
+            <button>Crush It!!</button>
         </div>
 
-        <div class="hero-img">
-            <!-- commented out image for now 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leviathan1.jpg/640px-Leviathan1.jpg"
-            a="this is a placeholder for an image">
-            -->
-            <div class="img-placeholder">
-                <p>this is a placeholder for an image</p>
-            </div>        
+            <div class="hero-img-contain"> 
+                <!-- flexbox will squish/stretch images, so they need a container around them
+                individually, might need display: block container; -->
+                <div class="hero-img">
+                    <img src="images/card.png"
+                    a="a valiant reward card. a sword with 4 mangoes skewered on it.">
+                    <!-- no longer needed
+                    <div class="img-placeholder">
+                        <p>this is a placeholder for a valiant image. Raging Rewards card, illustrated with 
+                            a long sword, that has several mango shaped stamps stamped into the blade. 10 stamps 
+                            earns a free Mango Crush.
+                        </p>
+                    </div>  
+                    -->
+                </div>          
         </div>
     </div>
 
     <!-- Section 2 -->
+    <div class="container-gradient">
+
     <div class="container-random">
-        <h2>Some random information</h2>
+        <a name="ingredients"></a>
+        <h2><!--What makes a Mango Crush?-->Why imbibe ambrosia, when you can quaff Mango Crush?</h2>
 
         <div class="frames">
             <div class="container-image">
-                <img a="an image in a box with rounded corners">
-                <p class="subtext">this is some subtext under an 
-                    illustration or image
+                <img src="images/mango.png" a="an image in a box with rounded corners">
+                <p class="subtext">Fresh. Ripe. Mangoes.
                 </p>
             </div>
 
             <div class="container-image">
-                <img a="an image in a box with rounded corners">
-                <p class="subtext">this is some subtext under an 
-                    illustration or image</p>
+                <img src="images/fruits.png"an image in a box with rounded corners">
+                <p class="subtext">Otherworldly fruits to elevate the nuance of mangoes</p>
             </div>
 
             <div class="container-image">
-                <img a="an image in a box with rounded corners">
-                <p class="subtext">this is some subtext under an 
-                    illustration or image</p>
+                <img src="images/ice.png"an image in a box with rounded corners">
+                <p class="subtext">Ice from the iciest tundras found beyond the hinterlands</p>
             </div>
 
             <div class="container-image">
                 
-                <img a="an image in a box with rounded corners">
-                <p class="subtext">this is some subtext under an 
-                    illustration or image</p>
+                <img src="images/swords.png"an image in a box with rounded corners" 
+                alt="a whole pile of swords">
+                <p class="subtext">We use the mightiest blenders to obtain the smoothest bounties</p>
         </div>
         </div>
     </div>
 
     <!-- Quote Block -->
     <div class="container-quote">
-        <h2>This is an inspiring quote, or a testimonial from a 
-            customer. Maybe it's just filling up space, or maybe 
-            people will actually read it. Who knows? All I know 
-            is that it looks nice.
+        <h2 class="quote">"</h2>
+        <div class="break"></div> <!-- break-->
+        <h2>What is best in life...to crush ripe mangoes, 
+            see them blended before you,
+            and to hear the contented sighs of your patrons 
+            enjoying their Mango Crush.
         </h2>
         <div class="break"></div> <!-- break -->
-        <h3>-Jolkien Rolkien Rolkien Tolkien</h3>
+        <h3>CONAN OF AQUILONIA</h3>
     </div>
 
+    </div> <!-- close div for container-gradient -->
+
     <!-- Call to Action Block -->
+        
         <div class="container-call">
             <div class="call">
+                <a name="adorn"></a>
                 <div class="call-text">
-                    <h2>Call to action! It's time!</h2>
-                    <p>Sign up for our product by click that 
-                        button right over there!
+                    <h2>Need to adorn yourself with more than a loincloth and torque?</h2>
+                    <p>Mango Crush has you covered with ornamented breeks, headbands, and more. Your 
+                        foes will cower in deference when you approach, envying your vigor and raiment.
                 </div>
                 </p>
-                <button>Sign Up</button>
+                    <div class="button">
+                    <button>Wares</button>
+                    </div>
             </div>
         </div>
     <footer>
-        <p>Copyright &#169; The Odin Project 2021</p>        
+        <p>Copyright &#169; Kylegraywolf 2023</p>        
     </footer>
 </body>
 
